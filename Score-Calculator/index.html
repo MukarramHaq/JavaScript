@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--The line below links the css file to html.-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      
+          <div class="home-team flow">
+            <h3>Home</h3>
+            <div id="home-score" class="home-score">0</div>
+            <div class="home-btns">
+                <button id="home-score-one" onclick="plusOne()">+1</button>
+                <button onclick="plusTwo()">+2</button>
+                <button onclick="plusThree()">+3</button>
+            </div>
+          </div>
+          <div class="away-team flow">
+            <h3>Away</h3>
+            <div id="away-score" class="away-score">0</div>
+            <div class="away-btns">
+                <button onclick="plusOneAway()">+1</button>
+                <button onclick="plusTwoAway()">+2</button>
+                <button onclick="plusThreeAway()">+3</button>
+            </div>
+          </div>
+    </div>
+
+    <!--The code below links the javascript file to html-->
+    <script src="index.js"></script>
+  </body>
+</html>

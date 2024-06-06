@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* This removes default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+@font-face {
+    font-family: CursedTimer;
+    src: url(cursed-timer-ulil-font/CursedTimerUlil-Aznm.ttf);
+}
+
+body{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #C4AD9D;
+}
+
+.container{
+    max-width: 20rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 1rem;
+    background-color: #1b244a;
+    border-radius: 1rem;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: 1rem;
+}
+
+h3{
+    font-family: sans-serif;
+    color: #ffff;
+    font-size: 1.5rem;
+}
+
+.home-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-score{
+    font-family: CursedTimer, sans-serif;
+    background-color: black;
+    color: #f84f6d;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.away-team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.away-score{
+    font-family: CursedTimer, sans-serif;
+    color: #f84f6d;
+    background-color: black;
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+button{
+    border: 1px solid white;
+    border-radius: 0.3rem;
+    /* border: none; */
+    font-family: CursedTimer, sans-serif;
+    background-color: #1b244a;
+    color: white;
+    padding: 0.3rem;
+    cursor: pointer;
+}
