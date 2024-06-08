@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* This removes default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+.flow > *:where(:not(:first-child)) {
+    margin-top: 2rem;
+}
+
+body{
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #c4ad98;
+    color:white;
+    font-family: sans-serif;
+    line-height: 1;
+}
+
+main{
+    padding-top: 173px;
+    padding-bottom: 173px;
+    width: 48.125rem;
+    padding-left: 4.625rem;
+    padding-right: 4.625rem;
+    background-color: #1f2937;
+    border-radius: 2rem;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+h1{
+    font-size: 3.6rem;
+}
+
+span{
+    color:#4adf87;
+}
+
+p{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    color: rgb(203, 202, 202);
+    font-weight: lighter;
+}
+
+button{
+    color: white;
+    background-color: #4adf87;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.3rem;
+    width: 10.938rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+hr{
+    border-color: grey;
+}
+
+.passwords{
+    display: flex;
+    gap: 1rem;
+}
+
+.passwords > *{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.3rem;
+    width: 12rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color: #273549;
+}
